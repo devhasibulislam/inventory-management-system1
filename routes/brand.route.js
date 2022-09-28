@@ -3,13 +3,14 @@ const brandController = require("../controllers/brand.controller");
 
 const router = express.Router();
 
-router.route("/")
+router
+  .route("/")
   .post(brandController.createBrand)
   .get(brandController.getBrands);
 
-router.route("/:id")
+router
+  .route("/:id")
   .get(brandController.getBrandById)
   .patch(brandController.updateBrand);
-
 
 module.exports = router;

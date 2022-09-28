@@ -11,7 +11,11 @@ const productRoute = require("./routes/product.route");
 const brandRoute = require("./routes/brand.route");
 
 app.get("/", (req, res) => {
-  res.send("Route is working! YaY!");
+  res.status(200).json({
+    acknowledgement: true,
+    message: "OK",
+    description: "The request is OK"
+  })
 });
 
 app.use("/api/v1/product", productRoute);

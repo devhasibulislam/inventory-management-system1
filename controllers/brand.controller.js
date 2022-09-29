@@ -23,7 +23,6 @@ exports.createBrand = async (req, res, next) => {
   }
 }
 
-
 exports.getBrands = async (req, res, next) => {
   try {
     const brands = await getBrandsService(req.body);

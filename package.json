@@ -4,7 +4,7 @@
   "description": "Creating an inventory management system through ER diagram",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start": "node index.js"
   },
   "dependencies": {
     "colors": "^1.4.0",

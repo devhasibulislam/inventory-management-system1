@@ -2,10 +2,9 @@
   "name": "inventory-management-acc",
   "version": "1.0.0",
   "description": "Creating an inventory management system through ER diagram",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "development": "NODE_ENV=development nodemon server",
-    "production": "NODE_ENV=production node server"
+    "start": "node server"
   },
   "dependencies": {
     "colors": "^1.4.0",
@@ -14,10 +13,6 @@
     "express": "^4.17.1",
     "mongoose": "^5.12.2",
     "validator": "^13.7.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20",
-    "win-node-env": "^0.6.1"
   },
   "author": "Hasibul Islam",
   "license": "ISC"

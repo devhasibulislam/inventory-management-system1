@@ -5,15 +5,16 @@ const categorySchema = mongoose.Schema(
   {
     name: {
       type: String,
-      trim: true,
       required: [true, "Please provide a category name"],
+      trim: true,
       lowercase: true,
       unique: true,
     },
     description: String,
-    imageUrl: {
+    imageURL: {
       type: String,
-      validate: [validator.isURL, "Please provide a valid URL"],
+      required: [true, "Please, provide an image url for your category"],
+      validate: [validator.isURL, "Please provide a valid image URL"],
     },
   },
   {
@@ -21,5 +22,5 @@ const categorySchema = mongoose.Schema(
   }
 );
 
-const Category = mongoose.model("Category", categorySchema);
+const Category = new mongoose.model("Category", categorySchema);
 module.exports = Category;
